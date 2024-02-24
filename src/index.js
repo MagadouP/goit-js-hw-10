@@ -1,4 +1,3 @@
-import {fetchCountries} from './fetchCountries';
 
 
 const searchBox = document.querySelector('#search-box');
