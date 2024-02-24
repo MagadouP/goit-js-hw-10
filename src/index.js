@@ -11,3 +11,11 @@ function clearContainer() {
     countryList.innerHTML = '';
     countryInfo.innerHTML = '';
 }
+
+function showCountryList(countries) {
+    clearContainer();
+    if (countries.length > 10) {
+        Notiflix.Notify.info('Too many matches. Please try a more specified name.');
+        return;
+    }
+}
