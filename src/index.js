@@ -18,4 +18,17 @@ function showCountryList(countries) {
         Notiflix.Notify.info('Too many matches. Please try a more specified name.');
         return;
     }
+    countries.forEach(country => {
+        const listItem = document.createComment('li');
+        const flag = document.createElement('img');
+        flag.src - country.flags.svg;
+        flag.alt - `${country.name.common} flag`;
+        flag.classList.add('country-flag');
+        const name = document.createElement('h1');
+        name.classList.add('country-name');
+        name.textContent = country.name.common;
+        listItem.appendChild(flag);
+        listItem.appendChild(name);
+        countryList.appendChild(listItem);
+    });
 }
