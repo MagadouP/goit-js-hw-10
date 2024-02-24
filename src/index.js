@@ -1,4 +1,4 @@
-import {fetchCountries} from 'https://restcountries.com/v3.1/all?fields=name,flags';
+import {fetchCountries} from './fetchCountries';
 import debounce from 'lodash.debounce';
 import Notiflix from 'notiflix';
 
