@@ -1,5 +1,5 @@
-import {fetchCountries} from './fetchCountries';
-import debounce from 'loadash.debounce';
+import {fetchCountries} from 'https://restcountries.com/v3.1/all?fields=name,flags';
+import debounce from 'lodash.debounce';
 import Notiflix from 'notiflix';
 
 const searchBox = document.querySelector('#search-box');
