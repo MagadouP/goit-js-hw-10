@@ -7,4 +7,7 @@ const countryList = document.querySelector('#country-list');
 const countryInfo = document.querySelector('#country-info');
 const container = document.querySelector('.container');
 
-
+function clearContainer() {
+    countryList.innerHTML = '';
+    countryInfo.innerHTML = '';
+}
