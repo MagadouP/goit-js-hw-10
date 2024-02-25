@@ -4,8 +4,8 @@ import Notiflix from 'notiflix';
 
 
 const searchBox = document.querySelector('#search-box');
-const countryList = document.querySelector('#country-list');
-const countryInfo = document.querySelector('#country-info');
+const countryList = document.querySelector('.country-list');
+const countryInfo = document.querySelector('.country-info');
 const container = document.querySelector('.container');
 
 function clearContainer() {
@@ -20,7 +20,7 @@ function showCountryList(countries) {
         return;
     }
     countries.forEach(country => {
-        const listItem = document.createComment('li');
+        const listItem = document.createElement('li');
         listItem.classList.add('country-list-item');
         const flag = document.createElement('img');
         flag.src = country.flags.svg;
@@ -56,15 +56,15 @@ const showCountryInfo = function showCountryInfo(country) {
     details.classList.add('country-details');
 
     const capital = document.createElement('li');
-    capital.innerHTML = `<span>Capital: </span${country.capital}`;
+    capital.innerHTML = `<span>Capital: </span>${country.capital}`;
     details.appendChild(capital)
 
     const population = document.createElement('li');
-    capital.innerHTML = `<span>Population: </span${country.population}`;
+    capital.innerHTML = `<span>Population: </spa>n${country.population}`;
     details.appendChild(population);
 
     const languages = document.createElement('li');
-    capital.innerHTML = `<span>Languages: </span${country.languages}`;
+    capital.innerHTML = `<span>Languages: </spa>n${country.languages}`;
     details.appendChild(languages);
 
     card.appendChild(details);
