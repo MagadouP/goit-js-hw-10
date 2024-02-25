@@ -60,11 +60,11 @@ const showCountryInfo = function showCountryInfo(country) {
     details.appendChild(capital)
 
     const population = document.createElement('li');
-    capital.innerHTML = `<span>Population: </spa>n${country.population}`;
+    capital.innerHTML = `<span>Population: </span>${country.population}`;
     details.appendChild(population);
 
     const languages = document.createElement('li');
-    capital.innerHTML = `<span>Languages: </spa>n${country.languages}`;
+    capital.innerHTML = `<span>Languages: </span>${country.languages}`;
     details.appendChild(languages);
 
     card.appendChild(details);
